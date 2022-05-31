@@ -1,0 +1,36 @@
+*,*::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+}
+
+.block {
+    max-width: 1200px;
+    width: 100%;
+    border: 1px solid red;
+}
+
+.text {
+    flex-shrink: 0;
+    width: 150px;
+    height: 150px;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text:not(:last-child) {
+    margin-right: 20px;
+}
+
+.simplebar-content {
+    display: flex;
+}
