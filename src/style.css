@@ -14,7 +14,6 @@
 .block {
     max-width: 1200px;
     width: 100%;
-    border: 1px solid red;
 }
 
 .text {
@@ -33,4 +32,19 @@
 
 .simplebar-content {
     display: flex;
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+    background-color: red;
+    opacity: 1;
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+    height: 2px;
+    top: 0;
+}
+
+.simplebar-track.simplebar-horizontal {
+    height: 2px;
+    background: #dedede;
 }
